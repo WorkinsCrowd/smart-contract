@@ -75,7 +75,6 @@ def answer(player, game_id, value, salt):
         Log('Not authorized')
         return 0
 
-    game_id = int_to_str(game_id)
     result = put_answer(player, game_id, value, salt, '1')
     if result == 0:
         result = put_answer(player, game_id, value, salt, '2')
